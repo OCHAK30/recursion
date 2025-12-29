@@ -1,0 +1,29 @@
+Notes to Self :-
+All possible patters from Subsequence
+
+1. Print All the Subsequence
+2. Print all Sq which sums to K
+3. Print only 1st Sq which sums to K -> return T/F and avoid further recursion calls if you get T
+4. Print the count of Sq which sums to K -> return 1/0 and add all f(); return.
+
+
+*Note In order to understand Printing all subsequence in absolute clear way..... Just take the example which striver gave in previous video
+
+Now create a table of all the output and match it with the power set. A magic will happen and you will be totally blown away 🔥🔥🔥
+
+Q. https://leetcode.com/problems/powx-n/description/
+Ref - https://www.youtube.com/watch?v=7wcJXZoGKMI
+
+Q. Recursive implementation of atoi() - V.V.Imp
+Ref - https://leetcode.com/problems/string-to-integer-atoi/solutions/5760544/beat-100-in-time-complexity-and-98-in-space-using-recursion/
+Ref - https://leetcode.com/problems/string-to-integer-atoi/solutions/6524587/beat-100-in-time-complexity-using-recursion-must-know-explained-thoroughly/
+
+// Sort the List using a Comparator
+        ans.sort((a, b) -> {
+            // Compare based on list size first
+            if (a.size() != b.size()) {
+                return Integer.compare(a.size(), b.size());
+            }
+            // If sizes are equal, compare lexicographically
+            return a.toString().compareTo(b.toString());
+});
