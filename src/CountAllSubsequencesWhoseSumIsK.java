@@ -1,6 +1,6 @@
 /**
  * https://www.youtube.com/watch?v=eQCS_v3bw0Q&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=7
- * TC: O(2 ^ n) * n -> Every index has two possibilities O(2^n) and we are print each subsequence as well so, O(n).
+ * TC: O(2 ^ n) -> Every index has two possibilities O(2^n)
  * SC: O(n) -> recursive stack space
  */
 
