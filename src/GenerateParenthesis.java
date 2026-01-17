@@ -27,7 +27,7 @@ public class GenerateParenthesis {
             return;
         }
 
-        generateParenthesis(curr + "(", list, n);
+        generateParenthesis(curr + "(", list, n);///original string is not changed hence, no need to remove
         generateParenthesis(curr + ")",list, n);
     }
 
