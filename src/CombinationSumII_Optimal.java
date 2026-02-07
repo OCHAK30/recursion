@@ -41,6 +41,7 @@ public class CombinationSumII_Optimal {
            //remove last element from list before calling next recursion
            list.remove(list.size() - 1);
         }
+        //If next element is equal to current element, we don't take it; it will generate same combinations then.
         while(ind + 1 < arr.length && arr[ind + 1] == arr[ind]){
             ind++;
         }

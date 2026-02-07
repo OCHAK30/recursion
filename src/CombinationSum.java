@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
-
+///TC: O(2^t * k) -> one element can have multiple combinations of P/N and k for avg length of list to be added in ans.
+///SC: completely dependent on the number of combinations. -> O(k * x) :: k-> avg length and x-> combinations
 public class CombinationSum {
     static List<List<Integer>> l = new ArrayList<>();
     public static void main(String[] args) {
