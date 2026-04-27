@@ -4,13 +4,13 @@ import java.util.List;
 
 //TC: O(n!) -> Q1 has 4 options, Q2 will have (n-1) options, Q3 will get (n-2) options and so on.
 //https://www.youtube.com/watch?v=BdSJnIdR-4s
-public class NQueenProblem {
+public class NQueenProblem2 {
     public static void main(String[] args) {
         int n = 4;
         solveNQueens(n);
     }
 
-    public static List<List<String>> solveNQueens(int n) {
+    public static int solveNQueens(int n) {
         //We create a board of nxn size
         char[][] board = new char[n][n];
         //Fill board array with "."
@@ -21,8 +21,8 @@ public class NQueenProblem {
 
         // Start solving from row 0
         placeNQueens(n, 0, ans, board);
-        System.out.println(ans);
-        return ans;
+        System.out.println(ans.size());
+        return ans.size();
     }
 
     public static void placeNQueens(int n,  int row, List<List<String>> ans, char[][] board){

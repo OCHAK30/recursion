@@ -11,7 +11,7 @@ import java.util.List;
 
 public class SubSetII {
     public static void main(String[] args) {
-        int[] arr = {1,2,2,2,3,3};
+        int[] arr = {1,2,2,3};
         Arrays.sort(arr);
         ArrayList<Integer> list = new ArrayList<>();
         HashSet<ArrayList<Integer>> hs = new HashSet<>();

@@ -6,13 +6,13 @@ import java.util.List;
 /**
  * https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=12
  * TC: O(2^n * n)
- * SC: O(2^n) * O(n)
- * Auxiliary Space: O(n)
+ * SC: O(2^n) * O(k)
+ * Auxiliary Space: O(n) -> depth of recursion
  */
 
 public class SubSetII_Optimal {
     public static void main(String[] args) {
-        int[] arr = {4,4,4,1,4};
+        int[] arr = {1,2,2};
         //sorting the array to ignore same combination subsets
         Arrays.sort(arr);
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
